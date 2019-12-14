@@ -1,6 +1,9 @@
 from setuptools import find_packages, setup
 
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
@@ -11,7 +14,8 @@ setup(
     include_package_data=True,
     license='AGPL',
     description='Allauth provider for the D120 SSO',
-    long_description='README.md',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/d120/django-allauth-d120',
     author='ckleemann',
     author_email='ckleemann@d120.de',
