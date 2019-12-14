@@ -1,14 +1,13 @@
 language: python
-python: "3.6"
-
+python: '3.6'
 script: python setup.py bdist_wheel
-
 deploy:
+  matrix:
   - provider: pypi
-    user: d120
-    distributions: "sdist bdist_wheel"
+    user: __token__
+    distributions: sdist bdist_wheel
     skip_cleanup: true
     on:
       tags: true
     password:
-      secure: "gdft0dfXk+UORzJXFLZKXPArjySmz4CJUKx++6mn1dPkNEL86gWEXFumPOouAgecVjdKe36D95ZfOyHeYZkvaa9emRY2xyNR+R5AID7YgOQ5PijtCvlckO1vQGU3+OYnGUKB3JHLGvqfpjXVbSftkhPlRX0mUmbo/HHn+Z8mtXq+hzdj0nD6ElcF0XwU6h0JsJ9+3OUrmrJGWR+06pCIAiXHgFgx7qyNPDODIxVAQAyMasRmWlKLmXCYWooLQ+g5SALSKX/ODkRS3yfYfKrztH0V2hIWdQjwwMqWCklCWYkL0bCCxyCsGKG+JDCgT4NeiKSDYD3ULk42N96j2RQmm5VJqjSSEVUcvw7WMqxt2QURnXHwnGsIayBqOvkRwQtOc+e8xFUCOe0x4JieZ2stmoMjJ9AN6fdLxkruhrg2+1K2pncEbkZoBbJr8IJ2l2erM19OF9/5nULjRI69HExWjL+Tb9/9n0fCk0Vr/lo06YPcEZ/NSCnMcnmq2Lu0aTBQ5adfkFIq9SoLDFgjdBr3hn0V5cDlS/v/c1RrHmgoK3IRwm3jB2deCLYvyEy3QU1ghV40CsLHVlOpTJfnHNEFD6RggI3oGnOA1J3AaLhCK4iCf+Xde1KFDduP7g6kAkqiV4FRyFT08qhVj5Ws4i5Ehz2nNS9PhIT6zsTxdlJRzHc="
+      secure: QZB9o8H9jpEJjJXZBn9Eqix748mSoKFFuIUmSbbCDPQi5Ts4/CmR3whLpQpt+6Xd61/K3+A/2bPULeMozQfKBu2sEufBivP0W15RP+IovBJtIPu3xqEARJS0jwiNxerUemjE8ySmzeVZa3QDErrgcqGs53ANEGfGOFZ2MhcqC+0DxFaXHBl+6Djwnja50H+SZtTYuGQj1RKKTjGKdOw88xPPMjxVCwfRwF5v6xBBtFBn+i4dZ0w9pfYwA+FQb9dulT1amVRlsOJ/cMP7HF+LaBDHK7sS10Wb4EfOH5Cb32FFeh7lueKxwmzBvXY9yD5pJ0ptI67MJRchk+Lp5kWv741LZ4YXSzIZtzi0h2uPqa7TZ2scPtUbT5TwGud4wsmxycIsAGGGH9JG4v3E0OePt+9UPfeB6r/r3oDJr+1th9NTIDPrrD5K6sysa0uKY4cakYLeF2NpVTp+dpkXd6lJYxW6j4UptN/NjkfdzH+aQx86aJJZp+4wVUHNQIScLdpJQV9uOuFoQc8LUDZ8UiosbwOypllA1urVcQRYCSmhjuyHuQ+7qEy2PYLaruP5xT3qlci4Sfn128AWsQeuTgys5f6JUG2el/R2vlLuILu9KCIGYBH53Y0UVOeL7H0CKIlJHY3wt4tfEwZYZNekTMWKx2pwrV73wKAgS+RcLFnWi9g=
