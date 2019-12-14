@@ -2,12 +2,11 @@ language: python
 python: '3.6'
 script: python setup.py bdist_wheel
 deploy:
-  matrix:
-  - provider: pypi
-    user: __token__
-    distributions: sdist bdist_wheel
-    skip_cleanup: true
-    on:
-      tags: true
-    password:
-      secure: QZB9o8H9jpEJjJXZBn9Eqix748mSoKFFuIUmSbbCDPQi5Ts4/CmR3whLpQpt+6Xd61/K3+A/2bPULeMozQfKBu2sEufBivP0W15RP+IovBJtIPu3xqEARJS0jwiNxerUemjE8ySmzeVZa3QDErrgcqGs53ANEGfGOFZ2MhcqC+0DxFaXHBl+6Djwnja50H+SZtTYuGQj1RKKTjGKdOw88xPPMjxVCwfRwF5v6xBBtFBn+i4dZ0w9pfYwA+FQb9dulT1amVRlsOJ/cMP7HF+LaBDHK7sS10Wb4EfOH5Cb32FFeh7lueKxwmzBvXY9yD5pJ0ptI67MJRchk+Lp5kWv741LZ4YXSzIZtzi0h2uPqa7TZ2scPtUbT5TwGud4wsmxycIsAGGGH9JG4v3E0OePt+9UPfeB6r/r3oDJr+1th9NTIDPrrD5K6sysa0uKY4cakYLeF2NpVTp+dpkXd6lJYxW6j4UptN/NjkfdzH+aQx86aJJZp+4wVUHNQIScLdpJQV9uOuFoQc8LUDZ8UiosbwOypllA1urVcQRYCSmhjuyHuQ+7qEy2PYLaruP5xT3qlci4Sfn128AWsQeuTgys5f6JUG2el/R2vlLuILu9KCIGYBH53Y0UVOeL7H0CKIlJHY3wt4tfEwZYZNekTMWKx2pwrV73wKAgS+RcLFnWi9g=
+  provider: pypi
+  user: '__token__'
+  distributions: sdist bdist_wheel
+  skip_cleanup: true
+  on:
+    tags: true
+  password:
+    secure: QZB9o8H9jpEJjJXZBn9Eqix748mSoKFFuIUmSbbCDPQi5Ts4/CmR3whLpQpt+6Xd61/K3+A/2bPULeMozQfKBu2sEufBivP0W15RP+IovBJtIPu3xqEARJS0jwiNxerUemjE8ySmzeVZa3QDErrgcqGs53ANEGfGOFZ2MhcqC+0DxFaXHBl+6Djwnja50H+SZtTYuGQj1RKKTjGKdOw88xPPMjxVCwfRwF5v6xBBtFBn+i4dZ0w9pfYwA+FQb9dulT1amVRlsOJ/cMP7HF+LaBDHK7sS10Wb4EfOH5Cb32FFeh7lueKxwmzBvXY9yD5pJ0ptI67MJRchk+Lp5kWv741LZ4YXSzIZtzi0h2uPqa7TZ2scPtUbT5TwGud4wsmxycIsAGGGH9JG4v3E0OePt+9UPfeB6r/r3oDJr+1th9NTIDPrrD5K6sysa0uKY4cakYLeF2NpVTp+dpkXd6lJYxW6j4UptN/NjkfdzH+aQx86aJJZp+4wVUHNQIScLdpJQV9uOuFoQc8LUDZ8UiosbwOypllA1urVcQRYCSmhjuyHuQ+7qEy2PYLaruP5xT3qlci4Sfn128AWsQeuTgys5f6JUG2el/R2vlLuILu9KCIGYBH53Y0UVOeL7H0CKIlJHY3wt4tfEwZYZNekTMWKx2pwrV73wKAgS+RcLFnWi9g=
