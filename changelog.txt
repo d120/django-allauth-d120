@@ -1,0 +1,25 @@
+# django-allauth-d120 changelog
+
+## 0.0.3
+
+20yy-mm-dd
+
+### Changes
+* Internationalization support is added and german localization is provided
+* The app name is changed from `d120_provider` to `allauth_d120_provider`
+* Allauth is updated to 0.41.0
+
+
+## 0.0.2
+
+2019-12-16
+
+### Changes
+* Fix the setup.py file for automatic release
+
+
+## 0.0.1
+
+2019-12-14
+
+Initial release

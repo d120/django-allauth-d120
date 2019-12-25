@@ -3,6 +3,7 @@
 !allauth_d120_provider/migrations/
 !*.py
 !requirements.txt
+!changelog.txt
 !LICENSE
 !README.md
 !.gitignore
