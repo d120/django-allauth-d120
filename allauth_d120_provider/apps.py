@@ -1,9 +1,10 @@
 from django.apps import AppConfig
+from django.utils.translation import gettext as _
 
 
 class D120ProviderConfig(AppConfig):
     name = 'allauth_d120_provider'
-    verbose_name = 'Allauth D120 Auth Provider'
+    verbose_name = _("D120 Authentication Provider")
 
     def ready(self):
         # noinspection PyUnresolvedReferences
