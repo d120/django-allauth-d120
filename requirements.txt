@@ -1,1 +1,1 @@
-django-allauth==0.40.0
+django-allauth==0.41.0
