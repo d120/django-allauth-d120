@@ -1,5 +1,5 @@
 *
-!d120_provider/
+!allauth_d120_provider/
 !*.py
 !requirements.txt
 !LICENSE
