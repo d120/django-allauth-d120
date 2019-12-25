@@ -21,14 +21,21 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 ```
-4. Run `manage.py migrate` to create sync the database with the newly installed apps
-5. Login into the Django Admin webinterface to configure the website object. Therefore go to site section and 
+4. Configure allauth to disable email verification, account sing up outside the sso and 
+account sign up via the sso in the `settings.py`:
+```python
+ACCOUNT_EMAIL_VERIFICATION = "none"
+ACCOUNT_ADAPTER = "allauth_d120_provider.account_adapter.DisableSignUpAdapter"
+SOCIALACCOUNT_ADAPTER = "allauth_d120_provider.account_adapter.SocialAccountAdapter"
+```
+5. Run `manage.py migrate` to create sync the database with the newly installed apps
+6. Login into the Django Admin webinterface to configure the website object. Therefore go to site section and 
 select the site model e.g. the url ends on `admin/sites/site/` where `admin/` is the root path of Django Admin
  in your project. Make sure the domain matches the domain your project is running on.
-6. Within Django Admin go to the Social Accounts section and select the Social applications model e.g. the url 
+7. Within Django Admin go to the Social Accounts section and select the Social applications model e.g. the url 
 ends on `admin/socialaccount/socialapp/` where `admin/` is the root path of Django Admin in your project. 
 Add a new instance which uses `D120 OAuth 2.0` as provider. Please ask fss@ for a Client id and the related Secret Key.
-7. Have a look at the [instructions to install allauth](https://django-allauth.readthedocs.io/en/latest/installation.html). 
+8. Have a look at the [instructions to install allauth](https://django-allauth.readthedocs.io/en/latest/installation.html). 
 There might be steps necessary steps that are not mentioned in this instruction.
 ## Group Synchronization
 You can create a group synchronization by adding instances of the groupsync Model via Django Admin. 
