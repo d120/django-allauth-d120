@@ -10,6 +10,7 @@ class GroupSync(models.Model):
     class Meta:
         verbose_name = _("Group synchronization")
         verbose_name_plural = _("Group synchronizations")
+        unique_together = ['external_group', 'django_group']
 
     def __str__(self):
         return "{} -> {}".format(self.external_group, self.django_group)
