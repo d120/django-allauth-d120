@@ -1,8 +1,16 @@
 # django-allauth-d120 changelog
 
+## 0.0.4
+
+2020-05-25
+
+### Changes
+* Allauth is updated to 0.42.0
+
+
 ## 0.0.3
 
-20yy-mm-dd
+2019-12-27
 
 ### Changes
 * Internationalization support is added and german localization is provided
