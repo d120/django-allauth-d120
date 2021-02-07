@@ -1,5 +1,22 @@
 # django-allauth-d120 changelog
 
+## 0.0.6
+
+2021-02-07
+
+### Changes
+* The Allauth dependency is remove. The dependency now must be maintained by app.
+
+
+## 0.0.5
+
+2020-12-05
+
+### Changes
+* Allauth is updated to 0.44.0
+* The deprecated read scope is removed from the defaults
+
+
 ## 0.0.4
 
 2020-05-25

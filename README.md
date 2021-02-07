@@ -5,7 +5,7 @@ django-allauth-d120 is a provider for [allauth](https://www.intenct.nl/projects/
  user from keycloak to your django project.
 
 ## Installation
-1. Install django-allauth-d120 with pip e.g. `pip install django-allauth-d120`
+1. Install django-allauth-d120 with pip e.g. `pip install django-allauth django-allauth-d120`
 2. Add the following apps to the installed `INSTALLED_APPS` in the `settings.py`:  
 `'django.contrib.sites',`  
 `'allauth',`  
