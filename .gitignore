@@ -1,11 +1,13 @@
 *
 !allauth_d120_provider/
 !allauth_d120_provider/migrations/
+!.github/workflows/
 !*.py
 !requirements.txt
 !changelog.txt
 !LICENSE
 !README.md
+!pyproject.toml
 !.gitignore
 !.style.yapf
 !.travis.yml
