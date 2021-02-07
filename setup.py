@@ -11,7 +11,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='django-allauth-d120',
-    version='0.0.7',
+    version='0.0.8',
     packages=find_packages(),
     include_package_data=True,
     license='AGPL',
