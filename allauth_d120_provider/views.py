@@ -16,7 +16,7 @@ class D120Adapter(OAuth2Adapter):
     settings = app_settings.PROVIDERS.get(provider_id, {})
     provider_base_url = settings.get('URL', provider_default_url)
     provider_realm = settings.get('realm', provider_default_realm)
-    provider_base_string = '{base}/auth/realms/{realm}/protocol/openid-connect/{endpoint}/'
+    provider_base_string = '{base}/realms/{realm}/protocol/openid-connect/{endpoint}/'
     provider_base = partial(provider_base_string.format, base=provider_base_url, realm=provider_realm)
 
     # Fetched programmatically, must be reachable from container
